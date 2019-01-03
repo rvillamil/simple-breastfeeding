@@ -1,6 +1,6 @@
 # Simple Breastfeeding: Remember the breast !
 
-Site for de iOS application "Simple Breastfeeding". Take the breastfeeding time of your baby!
+Site for the iOS application "Simple Breastfeeding". Take the breastfeeding time of your baby!
 
 <center>
 
