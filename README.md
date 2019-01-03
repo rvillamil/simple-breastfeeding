@@ -14,3 +14,4 @@ Site for the iOS application "Simple Breastfeeding". Take the breastfeeding time
 
 - [New issue](https://github.com/rvillamil/simple-breastfeeding-site/issues)
 - [Privacy policy](privacy-policy/policy_EN.pdf)|[Política de privacidad](privacy-policy/policy_ES.pdf)
+
