@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  rememberbreast
+
+  Created by Rodrigo Villamil Pérez on 27/7/18.
+  Copyright © 2018 Rodrigo Villamil Pérez. All rights reserved.
+*/
+
+"tbItemChronometer.title"="Chronometers";
+"lblYourBabyToday.text"="Your baby on ";
+"lblNumberBreastFeeding.text"="Total today ";
+
+"breastSideText_select_the_breast"="Select the breast in the image";
+"breastSideText_left"="Your last breastfeeding was in the breast left";
+"breastSideText_right"="Your last breastfeeding was in the breast right";
+"since"="";
+"hours"="hours and";
+"minutes"="minutes ago";
+
+"last"="Last";
+"lblElapsedTimeLeftBreast.text"="Your Left!";
+"lblElapsedTimeRightBreast.text"="Your Right!";
+
+"dlg.wrongmeasure.title"="Wrong measure?";
+"dlg.wrongmeasure.message_prefix"="You have been less than";
+"dlg.wrongmeasure.message_sufix"="seconds. Do we record this information?";
+"yes"="yes";
+
+"tbItemStatiticsTable.title"="Breastfeeding record";
+"left"="Left";
+"right"="Right";
+"during"="during";
+"additem.scence.title"="Add";
+
+"requestLocalPushNotification.title"="Reminder";
+"requestLocalPushNotification.body"="You have running chronometers. Have you checked them?";
+
+/*
+ CreateBreastFeedingViewController
+ */
+"dialogBackToTheFuture.title"="Back to the future...";
+"dialogBackToTheFuture.message"="Your end date is in the future...";
+
+"dialogBreastNotSelected.title"="Incomplete data";
+"dialogBreastNotSelected.message"="Breast selecting required";
+
+"dialogBreastWrongDuration.title"="Wrong dates";
+"dialogBreastWrongDuration.message"="End date menor or iqual than begin date ";
+"touchInBeginDateTime.message"="Begin date";
+"touchInEndDateTime.message"="End date";
+"touchInRightBreast.message"="Right breast selected";
+"touchInLeftBreast.message"="Left breast selected";
+"labelBeginDate.text"="Begin date";
+"labelEndDate.text"="End date";
+"labelDuration.text"="Duration";

@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "4zI-Cs-zuv"; */
+"4zI-Cs-zuv.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Enh-KG-v56"; */
+"Enh-KG-v56.text" = "Title";
+
+/* Class = "UIButton"; selectedTitle = "Your left !"; ObjectID = "J0s-he-czV"; */
+"J0s-he-czV.selectedTitle" = "Your left !";
+
+/* Class = "UIButton"; selectedTitle = "Your right !"; ObjectID = "TqU-GF-MKv"; */
+"TqU-GF-MKv.selectedTitle" = "Your right !";
+
+/* Class = "UITabBarItem"; title = "Chronometers"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Chronometers";
+
+/* Class = "UILabel"; text = "00 h 00 m 00 s"; ObjectID = "aqm-dE-3hu"; */
+"aqm-dE-3hu.text" = "00 h 00 m 00 s";
+
+/* Class = "UILabel"; text = "Last 00 h 00 m"; ObjectID = "brb-rQ-OhR"; */
+"brb-rQ-OhR.text" = "Last 00 h 00 m";
+
+/* Class = "UILabel"; text = "Your baby on 12 November"; ObjectID = "hVt-6W-xpe"; */
+"hVt-6W-xpe.text" = "Your baby on 12 November";
+
+/* Class = "UILabel"; text = "00 h 00 m 00 s"; ObjectID = "kPr-Xx-Ab5"; */
+"kPr-Xx-Ab5.text" = "00 h 00 m 00 s";
+
+/* Class = "UITabBarItem"; title = "Breast-feeding statistics table"; ObjectID = "lgP-ha-w24"; */
+"lgP-ha-w24.title" = "Breast-feeding statistics table";
+
+/* Class = "UILabel"; text = "Your last breastfeeding was in the breast right, 2 hours and 10 minutes ago"; ObjectID = "s0r-e5-WTs"; */
+"s0r-e5-WTs.text" = "Your last breastfeeding was in the breast right, 2 hours and 10 minutes ago";
+
+/* Class = "UILabel"; text = "Last 00 h 00 m"; ObjectID = "tdM-Rc-86Z"; */
+"tdM-Rc-86Z.text" = "Last 00 h 00 m";
+
+/* Class = "UILabel"; text = "Total today 56"; ObjectID = "uIM-o2-rk0"; */
+"uIM-o2-rk0.text" = "Total today 56";

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Breast Feeding View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="BreastFeedingViewController" customModule="simple_breastfeeding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your baby on 12 November" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-6W-xpe" userLabel="lblYourBabyToday">
+                                <rect key="frame" x="65" y="49" width="284" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo baby" translatesAutoresizingMaskIntoConstraints="NO" id="1O2-mb-DgZ" userLabel="imgBaby">
+                                <rect key="frame" x="137" y="84" width="140" height="136"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your last breastfeeding was in the breast right, 2 hours and 10 minutes ago" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0r-e5-WTs" userLabel="lblBreastSide">
+                                <rect key="frame" x="5" y="240" width="404" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-GF-MKv" userLabel="buttonRightBreast">
+                                <rect key="frame" x="236" y="278" width="180" height="473"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="breast right"/>
+                                <state key="selected" image="breast selected right">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightBreastButtonClicked:" destination="9pv-A4-QxB" eventType="touchUpInside" id="zeW-sQ-b6H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 h 00 m 00 s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPr-Xx-Ab5" userLabel="lblTimerLeftBreast">
+                                <rect key="frame" x="5" y="756" width="155" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last 00 h 00 m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-Rc-86Z" userLabel="lblElapsedTimeLeftBreast">
+                                <rect key="frame" x="5" y="788" width="108" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last 00 h 00 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brb-rQ-OhR" userLabel="lblElapsedTimeRightBreast">
+                                <rect key="frame" x="301" y="788" width="108" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 h 00 m 00 s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqm-dE-3hu" userLabel="lblTimerRightBreast">
+                                <rect key="frame" x="254" y="756" width="155" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total today 56" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-o2-rk0" userLabel="lblNumberBreastFeeding">
+                                <rect key="frame" x="127.5" y="308" width="159.5" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0s-he-czV" userLabel="buttonLeftBreast">
+                                <rect key="frame" x="0.0" y="278" width="180" height="473"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="breast left"/>
+                                <state key="selected" image="breast selected left"/>
+                                <connections>
+                                    <action selector="leftBreastButtonClicked:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qLj-ZX-HE3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="aqm-dE-3hu" secondAttribute="trailing" constant="5" id="0EL-41-6Z3"/>
+                            <constraint firstItem="uIM-o2-rk0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="3sh-dk-xWd"/>
+                            <constraint firstItem="tdM-Rc-86Z" firstAttribute="top" secondItem="kPr-Xx-Ab5" secondAttribute="bottom" constant="3" id="7ZB-um-gRm"/>
+                            <constraint firstItem="hVt-6W-xpe" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="5" id="8GI-Nh-vMY"/>
+                            <constraint firstItem="s0r-e5-WTs" firstAttribute="top" secondItem="1O2-mb-DgZ" secondAttribute="bottom" constant="20" id="BJv-FT-uPz"/>
+                            <constraint firstItem="uIM-o2-rk0" firstAttribute="top" secondItem="s0r-e5-WTs" secondAttribute="bottom" constant="15" id="HoZ-QF-obr"/>
+                            <constraint firstItem="brb-rQ-OhR" firstAttribute="top" secondItem="aqm-dE-3hu" secondAttribute="bottom" constant="3" id="IlS-cC-yC7"/>
+                            <constraint firstItem="kPr-Xx-Ab5" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="5" id="Si0-Mw-KFw"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="tdM-Rc-86Z" secondAttribute="bottom" constant="5" id="UKu-Fk-jkz"/>
+                            <constraint firstItem="1O2-mb-DgZ" firstAttribute="top" secondItem="hVt-6W-xpe" secondAttribute="bottom" constant="5" id="WPz-5W-8c8"/>
+                            <constraint firstItem="tdM-Rc-86Z" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="5" id="ZQN-AT-FeB"/>
+                            <constraint firstAttribute="trailing" secondItem="s0r-e5-WTs" secondAttribute="trailing" constant="5" id="eI5-u7-500"/>
+                            <constraint firstItem="s0r-e5-WTs" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="fK1-5F-dkm"/>
+                            <constraint firstItem="s0r-e5-WTs" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="5" id="iU0-9j-YjJ"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="brb-rQ-OhR" secondAttribute="trailing" constant="5" id="oDn-MP-mJ8"/>
+                            <constraint firstItem="hVt-6W-xpe" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="shy-hS-qfI"/>
+                            <constraint firstItem="1O2-mb-DgZ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="uk8-TG-zGU"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="brb-rQ-OhR" secondAttribute="bottom" constant="5" id="vsb-E8-ccy"/>
+                            <constraint firstItem="hVt-6W-xpe" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="xlA-JH-wTo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="buttonLeftBreast" destination="J0s-he-czV" id="EfO-JV-WhP"/>
+                        <outlet property="buttonRightBreast" destination="TqU-GF-MKv" id="EiK-da-gSQ"/>
+                        <outlet property="lblBreastSide" destination="s0r-e5-WTs" id="VQf-bF-wyR"/>
+                        <outlet property="lblElapsedTimeLeftBreast" destination="tdM-Rc-86Z" id="Q4K-Qf-cum"/>
+                        <outlet property="lblElapsedTimeRightBreast" destination="brb-rQ-OhR" id="rcm-f0-hJJ"/>
+                        <outlet property="lblNumberBreastFeeding" destination="uIM-o2-rk0" id="tFm-3w-vbX"/>
+                        <outlet property="lblTimerLeftBreast" destination="kPr-Xx-Ab5" id="Cu2-OS-7Mn"/>
+                        <outlet property="lblTimerRightBreast" destination="aqm-dE-3hu" id="Yuo-VZ-TMn"/>
+                        <outlet property="lblYourBabyToday" destination="hVt-6W-xpe" id="fdS-ZT-0WF"/>
+                        <outlet property="tbItemChronometer" destination="acW-dT-cKf" id="bc7-GK-D5X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="-245.75892857142856"/>
+        </scene>
+        <!--BreastFeeding Statitics TableView-->
+        <scene sceneID="meD-VH-NLa">
+            <objects>
+                <tableViewController id="hcY-Y7-YmG" customClass="StatisticsTableViewController" customModule="simple_breastfeeding" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MA0-0A-LVP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" textLabel="oPY-lQ-lXl" detailTextLabel="4Cs-84-3eD" style="IBUITableViewCellStyleSubtitle" id="tKR-H6-QAi">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tKR-H6-QAi" id="s5m-2C-Oln">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oPY-lQ-lXl">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Cs-84-3eD">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hcY-Y7-YmG" id="7W4-zX-PSF"/>
+                            <outlet property="delegate" destination="hcY-Y7-YmG" id="LNX-y0-9w9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="BreastFeeding Statitics TableView" id="IgG-ou-g7L"/>
+                    <connections>
+                        <outlet property="navigationItem" destination="IgG-ou-g7L" id="3lg-82-RF5"/>
+                        <segue destination="YVR-LT-V1P" kind="showDetail" identifier="showDetail" id="10z-KU-9s2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQN-5E-M9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560.8" y="463.71814092953525"/>
+        </scene>
+        <!--Navigation to Add Item-->
+        <scene sceneID="dBY-Xs-glv">
+            <objects>
+                <navigationController id="YVR-LT-V1P" userLabel="Navigation to Add Item" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qfg-2o-yqU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pel-lC-jyK" kind="relationship" relationship="rootViewController" id="e6C-zx-Dgg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfd-eE-ion" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2426" y="464"/>
+        </scene>
+        <!--Add item-->
+        <scene sceneID="XN9-od-4i0">
+            <objects>
+                <viewController id="Pel-lC-jyK" userLabel="Add item" customClass="CreateBreastFeedingViewController" customModule="simple_breastfeeding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="028-Yg-Rhr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Begin date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hna-K5-74k">
+                                <rect key="frame" x="5" y="113" width="100" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" red="0.90980392156862744" green="0.16470588235294117" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azu-Vd-ywV">
+                                <rect key="frame" x="5" y="150" width="83" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 h 00 m 00 s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAA-U6-qrT">
+                                <rect key="frame" x="263" y="187" width="146" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddx-ip-Umu">
+                                <rect key="frame" x="1" y="185" width="194" height="428"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="breast left"/>
+                                <state key="selected" image="breast selected left"/>
+                                <connections>
+                                    <action selector="touchInLeftBreast:" destination="Pel-lC-jyK" eventType="touchUpInside" id="LLF-q6-D69"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLD-LM-2bd">
+                                <rect key="frame" x="220" y="185" width="194" height="428"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="breast right"/>
+                                <state key="selected" image="breast selected right"/>
+                                <connections>
+                                    <action selector="touchInRightBreast:" destination="Pel-lC-jyK" eventType="touchUpInside" id="ogc-LV-glo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-M7-8Qn">
+                                <rect key="frame" x="5" y="187" width="80" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="23/2/2098" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zPI-fp-wpG">
+                                <rect key="frame" x="299" y="113" width="110" height="27"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="touchInBeginDateTime:" destination="Pel-lC-jyK" eventType="touchDown" id="ycN-uJ-1Jf"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="23/2/2098" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7Y-Ly-4Vb">
+                                <rect key="frame" x="299" y="150" width="110" height="27"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="touchInEndDateTime:" destination="Pel-lC-jyK" eventType="touchDown" id="RkU-8F-hoA"/>
+                                </connections>
+                            </textField>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3I6-Tr-UBD">
+                                <rect key="frame" x="0.0" y="597" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="554628755.89684296">
+                                    <!--2018-07-30 07:32:35 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="504961200">
+                                    <!--2017-01-01 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="Pel-lC-jyK" eventType="valueChanged" id="K4R-Zq-DxM"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDl-Cx-g6j">
+                                <rect key="frame" x="148.5" y="546" width="117" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.92156862750000001" green="0.4039215686" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8lt-ry-DqL" firstAttribute="bottom" secondItem="cDl-Cx-g6j" secondAttribute="bottom" constant="240" id="25C-WZ-bew"/>
+                            <constraint firstItem="8lt-ry-DqL" firstAttribute="trailing" secondItem="zPI-fp-wpG" secondAttribute="trailing" constant="5" id="63U-qy-t1H"/>
+                            <constraint firstItem="VlP-M7-8Qn" firstAttribute="top" secondItem="Azu-Vd-ywV" secondAttribute="bottom" constant="10" id="76m-ml-Khc"/>
+                            <constraint firstItem="8lt-ry-DqL" firstAttribute="trailing" secondItem="XAA-U6-qrT" secondAttribute="trailing" constant="5" id="91P-1L-fXe"/>
+                            <constraint firstItem="cDl-Cx-g6j" firstAttribute="centerX" secondItem="028-Yg-Rhr" secondAttribute="centerX" id="Hqn-JR-GVL"/>
+                            <constraint firstItem="Hna-K5-74k" firstAttribute="top" secondItem="8lt-ry-DqL" secondAttribute="top" constant="25" id="Jad-Y0-QKO"/>
+                            <constraint firstItem="Azu-Vd-ywV" firstAttribute="leading" secondItem="8lt-ry-DqL" secondAttribute="leading" constant="5" id="Jc0-aN-1kD"/>
+                            <constraint firstItem="3I6-Tr-UBD" firstAttribute="centerX" secondItem="028-Yg-Rhr" secondAttribute="centerX" id="QT2-4C-U2L"/>
+                            <constraint firstItem="zPI-fp-wpG" firstAttribute="top" secondItem="8lt-ry-DqL" secondAttribute="top" constant="25" id="ZFF-LY-d0E"/>
+                            <constraint firstItem="Azu-Vd-ywV" firstAttribute="top" secondItem="Hna-K5-74k" secondAttribute="bottom" constant="10" id="bll-zS-aNj"/>
+                            <constraint firstItem="t7Y-Ly-4Vb" firstAttribute="top" secondItem="zPI-fp-wpG" secondAttribute="bottom" constant="10" id="cpX-u9-WGw"/>
+                            <constraint firstItem="XAA-U6-qrT" firstAttribute="top" secondItem="t7Y-Ly-4Vb" secondAttribute="bottom" constant="10" id="kza-hF-Oom"/>
+                            <constraint firstItem="3I6-Tr-UBD" firstAttribute="trailing" secondItem="8lt-ry-DqL" secondAttribute="trailing" id="nah-k4-lJI"/>
+                            <constraint firstItem="Hna-K5-74k" firstAttribute="leading" secondItem="8lt-ry-DqL" secondAttribute="leading" constant="5" id="pW1-di-gIg"/>
+                            <constraint firstItem="3I6-Tr-UBD" firstAttribute="leading" secondItem="8lt-ry-DqL" secondAttribute="leading" id="quS-hu-ry8"/>
+                            <constraint firstItem="VlP-M7-8Qn" firstAttribute="leading" secondItem="8lt-ry-DqL" secondAttribute="leading" constant="5" id="tTa-l0-hWC"/>
+                            <constraint firstItem="8lt-ry-DqL" firstAttribute="bottom" secondItem="3I6-Tr-UBD" secondAttribute="bottom" id="wdI-mo-fRJ"/>
+                            <constraint firstItem="8lt-ry-DqL" firstAttribute="trailing" secondItem="t7Y-Ly-4Vb" secondAttribute="trailing" constant="5" id="zgb-Bi-ZAo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8lt-ry-DqL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add" id="u7O-bk-KzD"/>
+                    <connections>
+                        <outlet property="btnCheckLeftBreast" destination="ddx-ip-Umu" id="pki-rw-hu7"/>
+                        <outlet property="btnCheckRightBreast" destination="CLD-LM-2bd" id="tXV-xk-5BO"/>
+                        <outlet property="datePicker" destination="3I6-Tr-UBD" id="zOB-Xg-Mvu"/>
+                        <outlet property="lblBeginDate" destination="Hna-K5-74k" id="qrK-iN-wdL"/>
+                        <outlet property="lblDuration" destination="VlP-M7-8Qn" id="8LR-HY-O9u"/>
+                        <outlet property="lblEndDate" destination="Azu-Vd-ywV" id="h8r-6l-PuK"/>
+                        <outlet property="lblStatus" destination="cDl-Cx-g6j" id="HpA-CD-vLe"/>
+                        <outlet property="txtBeginDate" destination="zPI-fp-wpG" id="aCg-ph-Rgd"/>
+                        <outlet property="txtDuration" destination="XAA-U6-qrT" id="CO2-cm-P9k"/>
+                        <outlet property="txtEndDate" destination="t7Y-Ly-4Vb" id="itw-Qc-CJr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojh-cq-2C9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3183.75" y="462.67605633802816"/>
+        </scene>
+        <!--Navigation to statitics tableview-->
+        <scene sceneID="wjw-k8-Qw7">
+            <objects>
+                <navigationController id="Gt7-xz-Yrf" userLabel="Navigation to statitics tableview" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" systemItem="history" id="WGZ-SC-pph">
+                        <color key="badgeColor" red="1" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PIb-xh-5nd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.90980392160000001" green="0.1647058824" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hcY-Y7-YmG" kind="relationship" relationship="rootViewController" id="vb0-hR-zcB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFK-Fz-kDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="464"/>
+        </scene>
+        <!--Init View Scene (Tab Bar Controller)-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" userLabel="Init View Scene (Tab Bar Controller)" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="barTintColor" red="1" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.92156862745098034" green="0.40392156862745099" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabBar" destination="W28-zg-YXA" id="UiR-qE-wx4"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Gt7-xz-Yrf" kind="relationship" relationship="viewControllers" id="qRb-GF-KiA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo baby" width="140" height="136"/>
+        <image name="breast left" width="138" height="259"/>
+        <image name="breast right" width="138" height="259"/>
+        <image name="breast selected left" width="138" height="259"/>
+        <image name="breast selected right" width="138" height="259"/>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

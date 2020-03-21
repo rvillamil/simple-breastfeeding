@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  rememberbreast
+
+  Created by Rodrigo Villamil Pérez on 27/7/18.
+  Copyright © 2018 Rodrigo Villamil Pérez. All rights reserved.
+*/
+
+"tbItemChronometer.title"="Cronómetros";
+"lblYourBabyToday.text"="Tu bebé a ";
+"lblNumberBreastFeeding.text"="Hoy llevas ";
+
+"breastSideText_select_the_breast"="Selecciona uno o ambos pechos ...";
+"breastSideText_left"="Tu última toma fué en el pecho izquierdo";
+"breastSideText_right"="Tu última toma fué en el pecho derecho";
+"since"="hace ";
+"hours"="horas y";
+"minutes"="minutos";
+
+"last"="Desde hace";
+"lblElapsedTimeLeftBreast.text"="Tu izquierda!";
+"lblElapsedTimeRightBreast.text"="Tu derecha!";
+
+"dlg.wrongmeasure.title"="¿Te has confundido?";
+"dlg.wrongmeasure.message_prefix"="Has estado menos de";
+"dlg.wrongmeasure.message_sufix"="segundos. ¿Quieres grabar esta toma de pecho?";
+"yes"="Sí";
+
+"tbItemStatiticsTable.title"="Registro de tomas";
+"left"="Izquierda";
+"right"="Derecha";
+"during"="durante";
+"additem.scence.title"="Agregar";
+
+"requestLocalPushNotification.title"="Recordatorio";
+"requestLocalPushNotification.body"="Tienes cronómetros corriendo ¿Los has revisado?";
+
+
+
+/*
+  CreateBreastFeedingViewController
+ */
+"dialogBackToTheFuture.title"="Regreso al futuro ...";
+"dialogBackToTheFuture.message"="La fecha de fin es del futuro...";
+
+"dialogBreastNotSelected.title"="Datos incompletos";
+"dialogBreastNotSelected.message"="Selecciona al menos un pecho";
+
+"dialogBreastWrongDuration.title"="Fechas incorrectas";
+"dialogBreastWrongDuration.message"="La fecha de fin es menor o igual a la fecha de comienzo";
+
+"touchInBeginDateTime.message"="Fecha de comienzo";
+"touchInEndDateTime.message"="Fecha de fin";
+"touchInRightBreast.message"="Pecho derecho seleccionado";
+"touchInLeftBreast.message"="Pecho izquierdo seleccionado";
+"labelBeginDate.text"="Comienzo";
+"labelEndDate.text"="Fin";
+"labelDuration.text"="Durante";
