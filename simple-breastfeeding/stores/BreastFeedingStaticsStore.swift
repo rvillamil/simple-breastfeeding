@@ -135,7 +135,7 @@ class BreastFeedingStaticsStore {
             let records = try managedObjectContext.fetch(fetchRequest)
             
             for breastFeedingStatic in records {
-                var beginDateComponents = calendar.dateComponents(
+                let beginDateComponents = calendar.dateComponents(
                     [.day, .month, .year],
                     from: breastFeedingStatic.beginDateTime!)
                 

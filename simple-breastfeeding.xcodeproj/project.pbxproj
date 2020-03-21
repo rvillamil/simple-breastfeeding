@@ -162,7 +162,7 @@
 				TargetAttributes = {
 					5B4D59C020FF9D2C00A6B047 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -379,7 +379,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rvp.babies.rememberbreast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -397,7 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rvp.babies.rememberbreast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
